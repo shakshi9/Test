@@ -3,7 +3,7 @@
 include "dbconnection.php";
 
 if (isset($_REQUEST["s"])) {
-    $start = $_REQUEST["s"];
+    $start = abs($_REQUEST["s"]);
 } else {
     $start = 0;
 }
